@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  main-db:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017/graphql
